@@ -11,3 +11,5 @@ int16 Convert_Decel(double);
 int16 Convert_Speed(double);
 int16 Set_SpeedL(int16, double);
 int16 Set_SpeedR(int16, double);
+char getHiByte(int16);
+char getLoByte(int16);

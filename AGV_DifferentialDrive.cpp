@@ -136,3 +136,23 @@ int16 Set_SpeedR(int16 velocity, double steer_angle)
 	return commanded_throttle_r;
 }
 
+//Returns the high byte of a number in char format
+char getHiByte(int16 num)
+{
+	char* cByte;
+
+	cByte = (char*)&num;
+
+	return cByte[1];
+}
+
+//Returns the low byte of a number in char format
+char getLoByte(int16 num)
+{
+	char* cByte;
+
+	cByte = (char*)&num;
+
+	return cByte[0];
+}
+
